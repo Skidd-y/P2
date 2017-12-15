@@ -1,0 +1,545 @@
+use rlehnhard;
+
+############################################################################################################
+
+CREATE TABLE Hats (
+H_name VARCHAR(20) PRIMARY KEY,
+Obtained_from VARCHAR(20),
+Purchase_price INT,
+Sells_for INT,
+Fashion_theme VARCHAR(20),
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Hats;
+
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('1-Up Cap', 'Labelle', 320, 80, 'Sporty', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Afro Cap', 'Labelle', 720, 180, 'Flashy', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Afro Wig', 'Labelle', 600, 150, 'Flashy', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Alpinist Hat', 'Labelle', 320, 80, 'Iconic', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Baby''s Hat', 'Labelle', 400, 100, 'Cute', 'Fairy Tale');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Badge Hat', 'Labelle', 320, 80, 'Cute', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Balloon Hat', 'Balloon', 0, 150, 'Cute', 'Toy Shop');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Banana-Split Hat', 'Gracie Grace', 3508, 877, 'Flashy', 'Fairy Tale');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bandana', 'Labelle', 200, 50, 'Sporty', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Batter''s Helmet', 'Labelle', 600, 150, 'Sporty', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bear Cap', 'Labelle', 480, 120, 'Cute', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Beret', 'Labelle', 320, 80, 'Iconic', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bicycle Helmet', 'Labelle', 400, 100, 'Sporty', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Big Bro''s Hat', 'Labelle', 320, 80, 'Cute', 'Toy Shop');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Birthday Hat', 'Your Birthday', 0, 100, 'Cute', 'Fairy Tale');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Birthday Shades', 'Your Birthday (neighbor)', 0, 60, 'Rock-n-Roll', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Veil', 'Gracie Grace', 4000, 1000, 'Official', 'Fairy Tale');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Cap', 'Labelle', 320, 80, 'Sporty', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Headgear', 'Labelle', 800, 200, 'Sporty', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue New Year''s Hat', 'Countdown Event', 300, 75, 'Cute', 'None');
+INSERT INTO Hats (H_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Nightcap', 'Labelle', 300, 75, 'Cute', 'None');
+
+############################################################################################################
+
+CREATE TABLE Accesories (
+Acc_name VARCHAR(25) PRIMARY KEY,
+Obtained_from VARCHAR(20),
+Purchase_price INT,
+Sells_for INT,
+Fashion_theme VARCHAR(20),
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Accesories;
+
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('3D Glasses', 'Labelle', 240, 60, 'Flashy', 'Sci-Fi, Toy Shop');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Aviator Shades', 'Gracie Grace', 4800, 1200, 'Rock-n''-Roll', 'Trendy');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bad Bro''s Stache', 'Fortune Cookie #44', 0, 210, 'Flashy', 'Toy Shop');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Ballroom Mask', 'Gracie Grace', 4800, 1200, 'Iconic', 'Antique, Fairy Tale');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bandage', 'Labelle', 80, 20, 'Sporty', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Beak', 'Labelle', 640, 160, 'Cute', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Big Bro''s Mustache', 'Fortune Cookie #45', 0, 210, 'Cute', 'Toy Shop');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Frames', 'Labelle', 240, 60, 'Basic', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Brown Glasses', 'Labelle', 240, 60, 'Basic', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cucumber Pack', 'Labelle', 360, 90, 'Flashy', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Curly Mustache', 'Labelle', 160, 40, 'Official', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cyber Shades', 'Labelle', 640, 160, 'Flashy', 'Sci-Fi, Trendy');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Doctor''s Mask', 'Labelle', 80, 20, 'Basic', 'Sci-Fi');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Doctor''s Mirror', 'Labelle', 600, 150, 'Official', 'Quirky, Sci-Fi');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Eye Mask', 'Labelle', 160, 40, 'Flashy', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Eye Patch', 'Labelle', 240, 60, 'Rock-n''-Roll', 'Quirky, Toy Shop');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Facial Mask', 'Labelle', 400, 100, 'Flashy', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Funky Glasses', 'Labelle', 240, 60, 'Rock-n''-Roll', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Funny Glasses', 'Labelle', 240, 60, 'Flashy', 'None');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Gas Mask', 'Labelle', 600, 150, 'Flashy', 'Quirky');
+INSERT INTO Accesories (Acc_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Goggles', 'Labelle', 280, 70, 'Sporty', 'None');
+
+############################################################################################################
+
+
+CREATE TABLE Tops (
+Top_name VARCHAR(25) PRIMARY KEY,
+Obtained_from VARCHAR(25),
+Purchase_price INT,
+Sells_for INT,
+Fashion_theme VARCHAR(20),
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Tops;
+
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('24-Hour-Shop Uniform', 'Filly''s RV', 3, 711, 'Official', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Acid-Washed Jacket', 'Gracie Grace', 5600, 1400, 'Rock-n''-Roll', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('After-School Jacket', 'Able Sisters', 420, 105, 'Rock-n''-Roll', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Airy Tee', 'Able Sisters', 420, 105, 'Modern', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Amethyst Tank', 'Able Sisters', 360, 90, 'Ornate', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Aqua Polka Tank', 'Able Sisters', 280, 70, 'Basic', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Aqua Polka Tee', 'Able Sisters', 360, 90, 'Basic', 'Trendy');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Artic-Camo Shirt', 'Able Sisters', 420, 105, 'Rock-n''-Roll', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Artic-Camo Tee', 'Able Sisters', 320, 80, 'Rock-n''-Roll', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Argyle Knit Tee', 'Able Sisters', 460, 115, 'Iconic', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Armor Suit', 'Able Sisters', 400, 100, 'Historical', 'Antique, Quirky');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('A Tee', 'Able Sisters', 372, 93, 'Basic', 'Toy Shop');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Aurora Knit Shirt', 'Able Sisters', 380, 95, 'Cute', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bad Plaid Shirt', 'Able Sisters', 420, 105, 'Iconic', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bad Plaid Tee', 'Able Sisters', 420, 105, 'Iconic', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Barber Tee', 'Able Sisters', 640, 160, 'Flashy', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Baseball Shirt', 'Able Sisters', 320, 80, 'Sporty', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Basketball Tank', 'Able Sisters', 420, 105, 'Sporty', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('BB Tee', 'Able Sisters', 352, 88, 'Rock-n''-Roll', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Beaded Shirt', 'Able Sisters', 420, 105, 'Ornate', 'None');
+INSERT INTO Tops (Top_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bear Costume', 'Able Sisters', 280, 70, 'Ornate', 'None');
+
+############################################################################################################
+
+
+CREATE TABLE Bottoms (
+Bottoms_name VARCHAR(25) PRIMARY KEY,
+Obtained_from VARCHAR(25),
+Purchase_price INT,
+Sells_for INT,
+Fashion_theme VARCHAR(20),
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Bottoms;
+
+
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Acid-Washed Pants', 'Gracie Grace', 3600, 900, 'Rock-n''-Roll', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Aloha Shorts', 'Island Gift Shop', 15, 187, 'Iconic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Artic-Camo Pants', 'Able Sisters', 480, 120, 'Rock-n''-Roll', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Armor Pants', 'Able Sisters', 800, 200, 'Historical', 'Antique, Quirky');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Baseball Pants', 'Able Sisters', 480, 120, 'Sporty', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Basketball Shorts', 'Able Sisters', 480, 120, 'Sporty', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bear-Costume Pants', 'Able Sisters', 600, 150, 'Cute', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black-Denim Pants', 'Able Sisters', 480, 120, 'Basic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black-Denim Skirt', 'Able Sisters', 480, 120, 'Basic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Formal Pants', 'Able Sisters', 480, 120, 'Official', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Formal Skirt', 'Able Sisters', 480, 120, 'Official', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Track Pants', 'Able Sisters', 360, 90, 'Sporty', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Boxing Shorts', 'Able Sisters', 400, 100, 'Sporty', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue-Grid Skirt', 'Able Sisters', 360, 90, 'Basic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Gym Shorts', 'Able Sisters', 320, 80, 'Sporty', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue PJ Bottoms', 'Able Sisters', 240, 60, 'Basic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Polka Shorts', 'Able Sisters', 400, 100, 'Cute', 'Trendy');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue-Stripe Pants', 'Able Sisters', 480, 120, 'Basic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Warm-Up Pant', 'Able Sisters', 480, 120, 'Sporty', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue-Zap Pants', 'Able Sisters', 800, 200, 'Sporty', 'Sci-Fi, Toy Shop');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bone Pants', 'Able Sisters', 480, 120, 'Rock-n''-Roll', 'Quirky');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Brown Argyle Skirt', 'Gracie Grace', 3600, 900, 'Iconic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Brown Formal Pants', 'Able Sisters', 480, 120, 'Official', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Brown Plaid Shorts', 'Gracie Grace', 3600, 900, 'Basic', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Callie Pants', 'Cece''s RV', 3, 0, 'Not Known', 'Not Known');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cargo Pants', 'Cece''s RV', 3, 0, 'Rock-n''-Roll', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Caveman Shorts', 'Able Sisters', 360, 90, 'Historical', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Checkboard Skirt', 'Able Sisters', 480, 120, 'Rock-n''-Roll', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Chino Pants', 'Able Sisters', 480, 120, 'Ornate', 'Fairy Tale, Quirky');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Coreseted Skirt', 'Able Sisters', 480, 120, 'Ornate', 'Fairy Tale, Quirky');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cow Pants', 'Gracie Grace', 3600, 900, 'Flashy', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cuffed Pants', 'Able Sisters', 480, 120, 'Cute', 'None');
+INSERT INTO Bottoms (Bottoms_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Dapper Skirt', 'Able Sisters', 480, 120, 'Basic', 'None');
+
+############################################################################################################
+
+
+CREATE TABLE Dresses (
+Dresses_name VARCHAR(25) PRIMARY KEY,
+Obtained_from VARCHAR(25),
+Purchase_price INT,
+Sells_for INT,
+Fashion_theme VARCHAR(20),
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Dresses;
+
+
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Academy Uniform', 'Able Sisters', 720, 180, 'Official', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Alpinist Dress', 'Able Sisters', 640, 160, 'Iconic', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Ballet Outift', 'Able Sisters', 1600, 400, 'Sporty', 'Fairy Tale');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bathrobe', 'Gracie Grace', 5800, 1450, 'Flashy', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black-Velvet Dress', 'Gracie Grace', 8000, 2000, 'Rock-n''-Roll', 'Toy Shop');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blossom Dress', 'Able Sisters', 640, 160, 'Cute', 'Rustic');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blossoming Dress', 'Able Sisters', 620, 155, 'Iconic', 'Harmonious, Rustic');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Ballet Outfit', 'Able Sisters', 800, 200, 'Official', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Dotted Dress', 'Gracie Grace', 7200, 1800, 'Cute', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Lace-Up Dress', 'Able Sisters', 700, 175, 'Ornate', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Party Dress', 'Gracie Grace', 8000, 2000, 'Official', 'Fairy Tale');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Retro Dress', 'Able Sisters', 720, 180, 'Modern', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Butterfly Dress', 'Graccie Grace', 7200, 1800, 'Ornate', 'Fairy Tale, Quirky');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cake Dress', 'Gracie Grace', 6000, 1500, 'Official', 'Fairy Tale');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cake Dress Tank', 'Gracie Grace', 6000, 1500, 'Official', 'Fairy Tale');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Casual Outfit', 'Able Sisters', 720, 180, 'Iconic', 'Harmonious');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cat Dress', 'Able Sisters', 720, 180, 'Cute', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cat Tank Dress', 'Able Sisters', 800, 200, 'Cute', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Caveman Tank Dress', 'Able Sisters', 800, 200, 'Historical', 'None');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Chima Jeogori Dress', 'Able Sisters', 880, 220, 'Iconic', 'Harmonious');
+INSERT INTO Dresses (Dresses_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Citrus Gingham Dress', 'Able Sisters', 640, 160, 'Cute', 'None');
+
+############################################################################################################
+
+
+CREATE TABLE Socks (
+Socks_name VARCHAR(25) PRIMARY KEY,
+Obtained_from VARCHAR(25),
+Purchase_price INT,
+Sells_for INT,
+Fashion_theme VARCHAR(20),
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Socks;
+
+
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Argyle Socks', 'Kicks', 160, 40, 'Iconic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Argyle Tights', 'Kicks', 200, 50, 'Iconic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Beige Tights', 'Kicks', 200, 50, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Ankle Sock2', 'Kicks', 160, 30, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Leggings', 'Kicks', 240, 60, 'Cute', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Stockings', 'Kicks', 240, 60, 'Official', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Tights', 'Kicks', 160, 40, 'Official', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue-Stripe Tights', 'Kicks', 240, 60, 'Sporty', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Bobby Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Brown Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Brown-Stripe Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Callie Tights', 'Cece''s RV', 3, 0, 'Rock-n''-Roll', 'Not Known');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Checkered Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Colorful Socks', 'Kicks', 160, 40, 'Flashy', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Dress Socks', 'Kicks', 120, 30, 'Official', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Fishnet Tights', 'Kicks', 240, 60, 'Ornate', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Gray Leggings', 'Kicks', 240, 60, 'Cute', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Gray Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Gray Tights', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Green-Stipe Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Green Tights', 'Kicks', 200, 50, 'Cute', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Heart-Print Tights', 'Kicks', 240, 60, 'Cute', 'Fairy Tale');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Hiking Gaiters', 'Kicks', 240, 60, 'Sporty', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Kiki and Lala Socks', 'Etoile''s RV', 3, 0, 'Fancy', 'Fairy Tale');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Leg Warmers', 'Kicks', 160, 40, 'Sporty', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Marie Tights', 'Viche''s RV', 3, 0, 'Rock-n''-Roll', 'Not Known');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Navy Socks', 'Kicks', 160, 40, 'Official', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Polka-Dot Socks', 'Kicks', 200, 50, 'Cute', 'Trendy');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Purple Star Socks', 'Kicks', 160, 40, 'Cute', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Purple-Stripe Tights', 'Kicks', 200, 50, 'Cute', 'Trendy');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Rainbow Tights', 'Kicks', 300, 75, 'Ornate', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Red-Stripe Socks', 'Toby''s RV', 3, 0, 'Fancy', 'Fairy Tale');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Red Tights', 'Kicks', 200, 50, 'Ornate', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Soccer Socks', 'Kicks', 160, 40, 'Sporty', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Star Tights', 'Kicks', 200, 50, 'Cute', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Tube Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('White Ankle Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('White-Lace Socks', 'Kicks', 120, 30, 'Cute', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('White Socks', 'Kicks', 160, 40, 'Basic', 'None');
+INSERT INTO Socks (Socks_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('White Stockings', 'Kicks', 160, 40, 'Official', 'None');
+
+############################################################################################################
+
+
+CREATE TABLE Shoes (
+Shoes_name VARCHAR(25) PRIMARY KEY,
+Obtained_from VARCHAR(25),
+Purchase_price INT,
+Sells_for INT,
+Fashion_theme VARCHAR(20),
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Shoes;
+
+
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Armor Shoes', 'Kicks', 960, 240, 'Historical', 'Antique, Quirky');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Balley Slippers', 'Kicks', 400, 100, 'Sporty', 'Fairy Tale');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Basketball Shoes', 'Kicks', 640, 160, 'Sporty', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Loafers', 'Kicks', 420, 105, 'Basic', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Pumps', 'Kicks', 480, 120, 'Official', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Black Rain Boots', 'Kicks', 600, 150, 'Official', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Pumps', 'Kicks', 460, 115, 'Official', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Sneakers', 'Kicks', 480, 120, 'Basic', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Blue Wrestling Shoes', 'Kicks', 900, 225, 'Sporty', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Brown Loafers', 'Kicks', 480, 120, 'Official', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Callie Shoes', 'Cece''s RV', 3, 0, 'Rock-n''-Roll', 'Not Known');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cinnamoroll Shoes', 'Chai''s RV', 3, 0, 'Fancy', 'Fairy Tale');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cleats', 'Kicks', 720, 180, 'Sporty', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Climbing Shoes', 'Kicks', 600, 150, 'Sporty', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Clogs', 'Kicks', 480, 120, 'Modern', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Colorful Sneakers', 'Kicks', 460, 115, 'Sporty', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Cowboy Boots', 'Gracie Grace', 4000, 1000, 'Iconic', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Flip-Flops', 'Island Gift Shop', 20, 250, 'Sporty', 'None');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Flower Fairy Boots', 'Puzzle League (2500 Points)', 0, 300, 'Fancy', 'Not Known');
+INSERT INTO Shoes (Shoes_name, Obtained_from, Purchase_price, Sells_for, Fashion_theme, Interior_theme)
+VALUES ('Flower Loafers', 'Kicks', 480, 120, 'Iconic', 'None');
+
+############################################################################################################
+
+
+CREATE TABLE Umbrellas (
+Um_name VARCHAR(25) PRIMARY KEY,
+Obtained_from VARCHAR(25),
+Purchase_price INT,
+Sells_for INT,
+Interior_theme VARCHAR(20));
+
+SELECT * FROM Umbrellas;
+
+
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Bat Umbrella', 'Labelle', 320, 80, 'Antique, Quirky');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Beach Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Blue Dot Parasol', 'Labelle', 320, 80, 'Trendy');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Blue Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Busted Umbrella', 'Labelle', 160, 40, 'Quirky');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Camo Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Candy Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Daisy Umbrella', 'Labelle', 320, 80, 'Fairy Tale, Rustic');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Eggy Parasol', 'Labelle', 320, 80, 'Trendy');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Elegant Umbrella', 'Gracie Grace', 3200, 800, 'Trendy');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Flame Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Forest Umbrella', 'Labelle', 320, 80, 'Rustic');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Fruit-Panel Umbrella', 'Puzzle League (Story Mode)', 0, 0, 'Not Known');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Gelato Umbrella', 'Labelle', 320, 80, 'Toy Shop, Trendy');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Ghost Umbrella', 'Labelle', 352, 88, 'Toy Shop');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Gracie Umbrella', 'Grace Grace', 3200, 800, 'Trendy');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Green Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Lacy Parasol', 'Labelle', 320, 80, 'Fairy Tale');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Leaf Umbrella', 'Labelle', 320, 80, 'Rustic');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Lemon Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Leopard Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Maple Umbrella', 'Labelle', 320, 80, 'Rustic');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Melon Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Mint Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Modern Umbrella', 'Gracie GRace', 3200, 800, 'Trendy');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Paper Parasol', 'Labelle', 320, 80, 'Harmonious');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Paw Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Peach''s Parasol', 'Fortune Cookie #7', 0, 210, 'Antique, Fairy Tale');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Petal Paradol', 'Gracie Grace', 3200, 800, 'Fairy Tale, Rustic');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Picnic Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Red Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Ribbon Umbrella', 'Labelle', 320, 80, 'Fairy Tale');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Spider Umbrella', 'Labelle', 320, 80, 'Quirky');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Sunny Parasol', 'Labelle', 320, 80, 'Fairy Tale, Rustic');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Toad Parasol', 'Labelle', 320, 80, 'Trendy');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Yellow Umbrella', 'Labelle', 320, 80, 'None');
+INSERT INTO Umbrellas (Um_name, Obtained_from, Purchase_price, Sells_for, Interior_theme)
+VALUES ('Zebra Umbrella', 'Labelle', 320, 80, 'None');
+
+############################################################################################################
